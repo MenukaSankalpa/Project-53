@@ -1,2 +1,5 @@
-Using Clerk For Authentications
+Using Clerk For Authentications - [after made application and select frontend frame work]
+
+npm install @clerk/clerk-react
+
 49.11 -> since
