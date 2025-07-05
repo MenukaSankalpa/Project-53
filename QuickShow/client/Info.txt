@@ -6,4 +6,4 @@ npm install @clerk/clerk-react
 
 •-> must Check 1.35.01 | 1.38.40
 
-1.38.40 -> since
+1.44.40 -> since
