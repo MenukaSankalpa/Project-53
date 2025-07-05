@@ -1,5 +1,9 @@
 Using Clerk For Authentications - [after made application and select frontend frame work]
 
+npm install react-player
+
 npm install @clerk/clerk-react
 
-1.10.42 -> since
+•-> must Check 1.35.01 | 1.38.40
+
+1.38.40 -> since
