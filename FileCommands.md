@@ -19,3 +19,10 @@ After the set React
 # npm install react-player (to play vidioes)
 
 run the project ->  npm run dev
+
+Vite + tailwind Setup steps
+# npm install tailwindcss @tailwindcss/vite
+# @import "tailwindcss"; -> index.css file
+
+Google Fonts -> adding css
+# @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');  -> OutFit Style
