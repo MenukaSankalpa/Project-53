@@ -1,4 +1,4 @@
-import { StarIcon } from 'lucide-react'
+import { Heart, PlayCircleIcon, StarIcon } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { dummyDateTimeData, dummyShowsData } from '../assets/assets'
@@ -41,6 +41,17 @@ useEffect(()=>{
           <p>
             {timeFormat(show.movie.runtime)} • {show.movie.genres.map(genre => genre.name).join(", ")} • {show.movie.release_date.split("-")[0]}
           </p>
+
+          <div>
+            <button>
+              <PlayCircleIcon className={"w-5 h-5"}/>
+              Watch Trailer
+            </button>
+            <a href="">Buy Tickets</a>
+            <button>
+              <Heart className={`w-5 h-5`}/>
+            </button>
+          </div>
 
         </div>
       </div>
