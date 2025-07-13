@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { dummyDateTimeData, dummyShowsData } from '../assets/assets'
 import BlurCircle from '../components/BlurCircle'
+import DateSelect from '../components/DateSelect'
 import timeFormat from '../lib/timeFormat'
 
 const MovieDetails = () => {
@@ -66,6 +67,8 @@ useEffect(()=>{
           ))}
         </div>
       </div>
+
+      <DateSelect dateTime={show.dateTime} id={id}/>
 
     </div>
   ) : <div>Loading...</div>
