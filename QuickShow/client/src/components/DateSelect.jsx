@@ -1,8 +1,23 @@
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
-import React from 'react'
+import React, { useState } from 'react'
+import toast from 'react-hot-toast'
+import { useNavigate } from 'react-router-dom'
 import BlurCircle from './BlurCircle'
 
 const DateSelect = ({dateTime, id}) => {
+
+    const navigate = useNavigate();
+
+    const [selected, setSelected] = useState(null)
+
+    const onBookHandler = () => {
+        if(!selected){
+            return toast('Please select a date')
+        }
+        navigate(`/movies/${id}/${selected}`)
+        scrollTo(0,0)
+
+    }
   return (
     <div id='dateSelect' className='pt-30'>
         <div className='flex flex-col md:flex-row items-center justify-between gap-10 relative p-8 bg-primary/10 border border-primary/20 rounded-lg'>
